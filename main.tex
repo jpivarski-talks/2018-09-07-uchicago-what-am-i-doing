@@ -153,7 +153,7 @@ A ``jagged array'' (content $+$ offsets and/or content $+$ parents) is a basic b
 \end{itemize}
 
 \vspace{0.5 cm}
-Add columnar tables to the mix and you automatically get jagged tables: particle structs in events.
+\uncover<2->{\textcolor{darkblue}{Add columnar tables to the mix and you automatically get jagged tables: \\ e.g.\ arbitrarily many particle records in event records.}}
 
 \end{frame}
 
@@ -196,9 +196,12 @@ jagged arrays before indexing): \tabto{5.5 cm}{\small \mintinline{python}{events
 {\bf Problem:} Compute the $\phi$ difference between each jet and its event's MET.
 \small
 \begin{minted}{python}
+phidiffs = []
 for event in dataset:
+    event_phidiffs = []
     for jet in event.jets:
-        jet.phidiff = jet.phi - event.phi
+        event_phidiffs.append(jet.phi - event.phi)
+    phidiffs.append(event_phidiffs)
 \end{minted}
 \normalsize
 
@@ -207,8 +210,7 @@ for event in dataset:
 \small
 \begin{minted}{python}
 # because of extended broadcasting rules
-events["jets"]["phidiff"] = \
-    events["jets"]["phi"] - events["MET"]["phi"]
+phidiffs = events["jets"]["phi"] - events["MET"]["phi"]
 \end{minted}
 \end{frame}
 
@@ -302,26 +304,28 @@ events["best"] = events["leptoquarks"][argbest]
 \textcolor{blue}{\small\url{https://github.com/jpivarski/jupyter-performance-studies/blob/master/2018-09-10-jagged-reduction.ipynb}}
 \end{frame}
 
-\begin{frame}[fragile]{Like Femtocode without zero-runtime-error guarantee}
-\vspace{0.5 cm}
-Only four types of arrays are needed to make a reasonably complete typesystem ({\bf PLUR}, as expressive as Protobuf/Avro/Parquet/Arrow):
+\begin{frame}[fragile]{Like Femtocode, but without the zero-runtime-error guarantee}
+\vspace{0.25 cm}
+Only four types of arrays are needed to make a reasonably complete typesystem ({\bf PLUR}, as expressive as Protobuf, Avro, Parquet, Arrow, \ldots):
 \begin{itemize}
-\item {\bf P}rimitive: plain Numpy arrays
+\item {\bf P}rimitive: plain Numpy arrays of numbers, booleans (anything fixed-width)
 \item {\bf L}ist: jagged arrays
-\item {\bf U}nion: tagged, indexed list of arrays
-\item {\bf R}ecord: mapping from names to arrays
+\item {\bf U}nion: tagged, indexed tuple of arrays
+\item {\bf R}ecord: mapping from names to arrays (table)
 \end{itemize}
 
 \vspace{0.25 cm}
 \begin{uncoverenv}<2->
 As well as cross-references ({\bf PLURP} for arbitrary trees, graphs, enum-encoding):
 \begin{itemize}
-\item {\bf P}ointer: indexed array
+\item {\bf P}ointer: indexed array, possibly with circular references
 \end{itemize}
 \end{uncoverenv}
 
 \vspace{0.25 cm}
-\uncover<3->{And the ability to mix-in physics methods to table rows, tables, and jagged tables:}
+\uncover<3->{Get traditional objects by mixing methods into table rows, tables, and jagged tables.}
+
+\uncover<3->{Get functional programming with syntactic sugar: {\tt\small apply}, {\tt\small filter}, {\tt\small maxby}, \ldots}
 
 \small
 \begin{uncoverenv}<4->
@@ -344,20 +348,26 @@ leading      = dimuons[good].maxby(lambda z: z.pt())
 \vspace{-0.35 cm}
 \begin{uncoverenv}<7->
 \begin{minted}{python}
-boosted_jets = jets.boost(leading.boostvector())
+boosted_jets = jets.boost(leading.boostvector())    # broadcasted
 \end{minted}
 \end{uncoverenv}
 \end{frame}
 
-\begin{frame}{Try it out!}
-\vspace{0.15 cm}
+\begin{frame}{Working examples in uproot 3: try it out!}
+\vspace{0.25 cm}
 \textcolor{blue}{\small\url{https://mybinder.org/v2/gh/scikit-hep/uproot/master?filepath=binder\%2Fversion-3-features.ipynb}}
 
-\vspace{0.25 cm}
+\vspace{0.15 cm}
 \includegraphics[width=\linewidth]{tutorial-screenshot.png}
 \end{frame}
 
-
+\begin{frame}{}
+\Large
+\vspace{1 cm}
+\begin{center}
+\textcolor{darkblue}{Next topic: uproot}
+\end{center}
+\end{frame}
 
 \begin{frame}{uproot is crazy popular}
 \vspace{0.5 cm}
@@ -371,6 +381,10 @@ Nearly 1~year from version~1.0 to version~3.0.0b2 $\to$ 551 unique downloaders.
 \only<2>{\includegraphics[height=4.2 cm]{uproot-pip-vsos.pdf}}
 \only<3>{\includegraphics[height=4.2 cm]{uproot-pip-vsoscountry.pdf}}
 \end{frame}
+
+
+
+
 
 
 
