@@ -361,11 +361,11 @@ boosted_jets = jets.boost(leading.boostvector())    # broadcasted
 \includegraphics[width=\linewidth]{tutorial-screenshot.png}
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}{Next topic}
 \Large
 \vspace{1 cm}
 \begin{center}
-\textcolor{darkblue}{Next topic: uproot}
+\includegraphics[width=0.3\linewidth]{uproot-logo.pdf}
 \end{center}
 \end{frame}
 
@@ -382,7 +382,32 @@ Nearly 1~year from version~1.0 to version~3.0.0b2 $\to$ 551 unique downloaders.
 \only<3>{\includegraphics[height=4.2 cm]{uproot-pip-vsoscountry.pdf}}
 \end{frame}
 
+\begin{frame}{Pure Python+Numpy has good performance for large baskets}
+\vspace{0.5 cm}
 
+\begin{columns}
+\column{0.55\linewidth}
+\mbox{ } \hfill Speedup relative to C++ ROOT (3$\times$) \hfill \mbox{ }
+
+\includegraphics[width=\linewidth]{root-none-muon.png}
+
+\column{0.55\linewidth}
+\mbox{ } \hfill Speedup relative to root\_numpy (30$\times$) \hfill \mbox{ }
+
+\includegraphics[width=\linewidth]{rootnumpy-none-muon.png}
+\end{columns}
+
+\vspace{0.5 cm}
+The key is that uproot does {\it less work---} it only delivers arrays (jagged arrays, above). It does not create event objects.
+\end{frame}
+
+\begin{frame}{That's why I've been focusing so much on manipulating arrays}
+\vspace{0.3 cm}
+\begin{columns}
+\column{1.15\linewidth}
+\includegraphics[width=\linewidth]{logscales.pdf}
+\end{columns}
+\end{frame}
 
 
 
