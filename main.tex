@@ -302,8 +302,59 @@ events["best"] = events["leptoquarks"][argbest]
 \textcolor{blue}{\small\url{https://github.com/jpivarski/jupyter-performance-studies/blob/master/2018-09-10-jagged-reduction.ipynb}}
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}[fragile]{Like Femtocode without zero-runtime-error guarantee}
+\vspace{0.5 cm}
+Only four types of arrays are needed to make a reasonably complete typesystem ({\bf PLUR}, as expressive as Protobuf/Avro/Parquet/Arrow):
+\begin{itemize}
+\item {\bf P}rimitive: plain Numpy arrays
+\item {\bf L}ist: jagged arrays
+\item {\bf U}nion: tagged, indexed list of arrays
+\item {\bf R}ecord: mapping from names to arrays
+\end{itemize}
 
+\vspace{0.25 cm}
+\begin{uncoverenv}<2->
+As well as cross-references ({\bf PLURP} for arbitrary trees, graphs, enum-encoding):
+\begin{itemize}
+\item {\bf P}ointer: indexed array
+\end{itemize}
+\end{uncoverenv}
+
+\vspace{0.25 cm}
+\uncover<3->{And the ability to mix-in physics methods to table rows, tables, and jagged tables:}
+
+\small
+\begin{uncoverenv}<4->
+\begin{minted}{python}
+dimuons      = muons.pairs(same=False).apply(lambda a, b: a + b)
+\end{minted}
+\end{uncoverenv}
+\vspace{-0.35 cm}
+\begin{uncoverenv}<5->
+\begin{minted}{python}
+good         = dimuons.mass().apply(lambda m: (40 < m) & (m < 140))
+\end{minted}
+\end{uncoverenv}
+\vspace{-0.35 cm}
+\begin{uncoverenv}<6->
+\begin{minted}{python}
+leading      = dimuons[good].maxby(lambda z: z.pt())
+\end{minted}
+\end{uncoverenv}
+\vspace{-0.35 cm}
+\begin{uncoverenv}<7->
+\begin{minted}{python}
+boosted_jets = jets.boost(leading.boostvector())
+\end{minted}
+\end{uncoverenv}
+\end{frame}
+
+\begin{frame}{Try it out!}
+\vspace{0.15 cm}
+\textcolor{blue}{\small\url{https://mybinder.org/v2/gh/scikit-hep/uproot/master?filepath=binder\%2Fversion-3-features.ipynb}}
+
+\vspace{0.25 cm}
+\includegraphics[width=\linewidth]{tutorial-screenshot.png}
 \end{frame}
 
 
