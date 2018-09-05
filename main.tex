@@ -191,10 +191,118 @@ jagged arrays before indexing): \tabto{5.5 cm}{\small \mintinline{python}{events
 \end{columns}
 \end{frame}
 
+\begin{frame}[fragile]{Solving physics problems with jagged array programming}
+\vspace{0.5 cm}
+{\bf Problem:} Compute the $\phi$ difference between each jet and its event's MET.
+\small
+\begin{minted}{python}
+for event in dataset:
+    for jet in event.jets:
+        jet.phidiff = jet.phi - event.phi
+\end{minted}
+\normalsize
 
+\vspace{0.5 cm}
+{\bf Jagged array solution:} 
+\small
+\begin{minted}{python}
+# because of extended broadcasting rules
+events["jets"]["phidiff"] = \
+    events["jets"]["phi"] - events["MET"]["phi"]
+\end{minted}
+\end{frame}
 
+\begin{frame}[fragile]{Solving physics problems with jagged array programming}
+\vspace{0.5 cm}
+{\bf Problem:} Compute mass of all particles from two collections, subjet to a cut.
+\small
+\begin{minted}{python}
+for event in dataset:
+    event.leptoquarks = []
+    for jet in event.jets:
+        for lepton in event.leptons:
+            if cut(jet, lepton):
+                event.pairs.append(mass(jet, lepton))
+\end{minted}
+\normalsize
 
-\begin{frame}
+\vspace{0.5 cm}
+{\bf Jagged array solution:} 
+\small
+\begin{minted}{python}
+# jagged cross-join makes (jet, lepton) pairs per event
+pairs = events["jets"].cross(events["leptons"])
+
+events["leptoquarks"] = mass(pairs[cut(pairs)])
+\end{minted}
+\end{frame}
+
+\begin{frame}[fragile]{Solving physics problems with jagged array programming}
+\vspace{0.5 cm}
+{\bf Problem:} Find the ``best'' candidate per event or per subcollection.
+\small
+\begin{minted}{python}
+for event in dataset:
+    event.best = []
+    for leptoquark in leptoquarks:
+        if event.best == [] or \
+            quality(leptoquark) > quality(event.best[0]):
+                event.best = [leptoquark]
+\end{minted}
+\normalsize
+
+\vspace{0.5 cm}
+{\bf Jagged array solution:} 
+\small
+\begin{minted}{python}
+# jagged argmax makes empty lists [] or singleton lists [N]
+argbest = quality(events["leptoquarks"]).argmax()
+
+# jagged fancy indexing transforms [] -> [] and [i] -> [sublist[i]]
+events["best"] = events["leptoquarks"][argbest]
+\end{minted}
+\end{frame}
+
+\begin{frame}{These array programming primitives are vectorizable in hardware}
+\vspace{0.25 cm}
+\hfill \begin{minipage}{0.2\linewidth}
+\begin{center}
+\includegraphics[height=2.5 cm]{jaydeep.jpg}
+
+\small Jaydeep Nandi GSoC student
+\end{center}
+\end{minipage}
+
+\vspace{-3.55 cm}
+\includegraphics[width=0.75\linewidth]{hillis-steele-3.pdf}
+
+\vspace{-1.5 cm} Do a parallel prefix scan to compute a cumulative sum in parallel, but use ``parents'' array to mask for same event, then select the last in each event. \vspace{1.5 cm}
+\end{frame}
+
+\begin{frame}{These array programming primitives are vectorizable in hardware}
+\large
+\vspace{0.5 cm}
+\begin{columns}
+\column{0.5\linewidth}
+\mbox{ } \hfill Sum of items in groups \hfill \mbox{ }
+
+\includegraphics[width=\linewidth]{sum_rates_logy.pdf}
+
+\column{0.5\linewidth}
+\mbox{ } \hfill Max of items in groups \hfill \mbox{ }
+
+\includegraphics[width=\linewidth]{max_rates_logy.pdf}
+\end{columns}
+
+\vspace{0.5 cm}
+\normalsize
+\textcolor{gray}{cmslpcgpu3.fnal.gov (Xeon Silver 4110 CPU, Tesla P100 GPU)}
+
+\vspace{0.25 cm}
+\textcolor{blue}{\small\url{https://github.com/jpivarski/jupyter-performance-studies/blob/master/2018-09-10-jagged-reduction.ipynb}}
+\end{frame}
+
+\begin{frame}{}
 
 \end{frame}
 
