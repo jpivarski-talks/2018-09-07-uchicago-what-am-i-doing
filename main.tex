@@ -32,7 +32,7 @@
 \definecolor{darkgreen}{rgb}{0,0.6,0}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
-\title[2018-09-07-uchicago-what-am-i-doing]{What am I doing?}
+\title[2018-09-07-uchicago-what-am-i-doing]{\huge What am I doing?}
 \author{Jim Pivarski}
 \institute{Princeton University -- DIANA-HEP}
 \date{September 7, 2018}
@@ -56,10 +56,43 @@
 
 % START START START START START START START START START START START START START
 
-\begin{frame}{THERE}
+\begin{frame}{}
+\Large
 \vspace{0.5 cm}
-HERE
+\begin{center}
+\textcolor{darkblue}{It's good to give a talk like this because I don't have any \\ ``status report'' meetings to force myself to review.}
+\end{center}
 \end{frame}
+
+\begin{frame}{End goal: query service}
+\large
+\vspace{0.5 cm}
+I often talk about a ``query service'' to end our reliance on private skims before they become infeasible (HL-LHC).
+
+\begin{center}
+\includegraphics[width=0.5\linewidth]{basic-block-diagram.pdf}
+\end{center}
+
+\uncover<2->{\textcolor{darkblue}{That's still my end goal, which I use to judge the value of each of my subprojects, but what I'm actually doing is several steps removed from that.}}
+\end{frame}
+
+\begin{frame}{Pieces of a query service}
+\large
+\vspace{0.5 cm}
+\begin{itemize}
+\item \textcolor{darkblue}{Distributed task scheduling:}
+
+\item \textcolor{darkblue}{Query language:}
+
+\item \textcolor{darkblue}{Columnar data storage/management:}
+
+\item \textcolor{darkblue}{Columnar ROOT access:}
+
+\item \textcolor{darkblue}{Manipulating event/subevent structure:}
+
+\end{itemize}
+\end{frame}
+
 
 
 
@@ -67,12 +100,13 @@ HERE
 \vspace{0.5 cm}
 Nearly 1~year from version~1.0 to version~3.0.0b2 $\to$ 551 unique downloaders.
 
-\textcolor{gray}{\scriptsize (``Uniqueness'' defined as same country code, OS distribution name and version; may over- or under-count.)}
+\textcolor{gray}{\scriptsize (``Uniqueness'' defined as same country code, OS distribution, version, and kernel; may over- or under-count.)}
 
-\includegraphics[height=4.3 cm]{uproot-pip-vsweek.pdf}
-\only<1>{\hfill \includegraphics[height=4.3 cm]{uproot-pip-numdownloads.pdf}}
-\only<2>{\includegraphics[height=4.3 cm]{uproot-pip-vscountry.pdf}}
-\only<2>{\includegraphics[height=4.3 cm]{uproot-pip-vsos.pdf}}
+\includegraphics[height=4.2 cm]{uproot-pip-vsweek.pdf}
+\only<1>{\hfill \includegraphics[height=4.2 cm]{uproot-pip-numdownloads.pdf}}
+\only<2-3>{\includegraphics[height=4.2 cm]{uproot-pip-vscountry.pdf}}
+\only<2>{\includegraphics[height=4.2 cm]{uproot-pip-vsos.pdf}}
+\only<3>{\includegraphics[height=4.2 cm]{uproot-pip-vsoscountry.pdf}}
 \end{frame}
 
 
