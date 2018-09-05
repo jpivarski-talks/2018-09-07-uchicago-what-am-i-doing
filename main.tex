@@ -418,21 +418,55 @@ The key is that uproot does {\it less work---} it only delivers arrays (jagged a
 \end{frame}
 
 \begin{frame}{``Reduced query output'' object rich enough for offline analysis}
-\Large
+\vspace{0.15 cm}
+\large
 \begin{center}
 \includegraphics[width=0.5\linewidth]{basic-block-diagram-2.pdf}
 \end{center}
 
-\begin{itemize}
-\item Must be array-ready: 
+\begin{itemize}\setlength{\itemsep}{0.1 cm}
+\item Must be array-ready: vectorized {\tt\small fill} method.
 \item Should be able to delay plotting decisions: multidimensional block of bins for later slicing and projecting.
-\item 
-
-
+\item Should represent multiple, related histograms, fillable en masse: ``books'' of histograms. Ideally, those relationships should be passed on to a multi-channel fitter.
+\item Also needs to include small ntuples (TODO).
 \end{itemize}
 \end{frame}
 
+\begin{frame}[fragile]{Examples}
+All histograms are N-dimensional and expressions to compute are next to their binning.
 
+\vspace{0.2 cm}
+\hfill \includegraphics[height=2.3 cm]{histbook-beside.pdf}
+
+\vspace{-2.5 cm}
+\scriptsize
+\begin{minted}{python}
+>>> from histbook import *
+>>> hist = Hist(
+...    bin("sqrt(x**2 + y**2)", 5, 0, 1),
+...    bin("arctan2(y, x)", 3, -pi, pi))
+>>> hist.fill(dataframe)
+>>> beside(hist.step("sqrt(y**2 + x**2)"),
+...        hist.step("arctan2(y,x)"))
+\end{minted}
+\normalsize
+
+Projections, rebinning, binwise selections, can all be performed after filling.
+
+\vspace{0.2 cm}
+\hfill \includegraphics[height=2.3 cm]{histbook-stack.pdf}
+
+\vspace{-2.5 cm}
+\scriptsize
+\begin{minted}{python}
+>>> (hist.select("arctan2(y, x) >= -pi")
+...      .stack("arctan2(y, x)")
+...      .area("sqrt(x**2+y**2)"))
+\end{minted}
+\normalsize
+
+
+\end{frame}
 
 
 

@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   class="marks"
+   width="433.10254"
+   height="244.10156"
+   viewBox="0 0 433.10254 244.10156"
+   version="1.1"
+   id="svg3635"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="histbook-stack.svg">
+  <metadata
+     id="metadata3883">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="922"
+     inkscape:window-height="987"
+     id="namedview3881"
+     showgrid="false"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     inkscape:zoom="0.89847716"
+     inkscape:cx="210.5293"
+     inkscape:cy="123.49219"
+     inkscape:window-x="992"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g3659" />
+  <defs
+     id="defs3637">
+    <clipPath
+       id="clip4">
+      <rect
+         x="0"
+         y="0"
+         width="200"
+         height="200"
+         id="rect3640" />
+    </clipPath>
+    <clipPath
+       id="clip5">
+      <rect
+         x="0"
+         y="0"
+         width="200"
+         height="200"
+         id="rect3643" />
+    </clipPath>
+    <clipPath
+       id="clip6">
+      <rect
+         x="0"
+         y="0"
+         width="200"
+         height="200"
+         id="rect3646" />
+    </clipPath>
+    <clipPath
+       id="clip7">
+      <rect
+         x="0"
+         y="0"
+         width="200"
+         height="200"
+         id="rect3649" />
+    </clipPath>
+  </defs>
+  <g
+     transform="translate(75.764649,5.1054687)"
+     id="g3651">
+    <g
+       class="mark-group role-frame root"
+       id="g3653">
+      <g
+         id="g3655">
+        <path
+           class="background"
+           d="m 0.5,0.5 h 200 v 200 H 0.5 z"
+           style="fill:none;stroke:#dddddd"
+           id="path3657"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g3659">
+          <g
+             class="mark-group role-axis"
+             id="g3661">
+            <g
+               transform="translate(0.5,200.5)"
+               id="g3663">
+              <path
+                 class="background"
+                 d="M 0,0 H 0 V 0 H 0 z"
+                 style="fill:none"
+                 id="path3665"
+                 inkscape:connector-curvature="0" />
+              <g
+                 id="g3667">
+                <g
+                   class="mark-rule role-axis-grid"
+                   id="g3669">
+                  <line
+                     transform="translate(0,-200)"
+                     x2="0"
+                     y2="200"
+                     style="fill:none;stroke:#dddddd;stroke-width:1"
+                     id="line3671"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(40,-200)"
+                     x2="0"
+                     y2="200"
+                     style="fill:none;stroke:#dddddd;stroke-width:1"
+                     id="line3673"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(80,-200)"
+                     x2="0"
+                     y2="200"
+                     style="fill:none;stroke:#dddddd;stroke-width:1"
+                     id="line3675"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(120,-200)"
+                     x2="0"
+                     y2="200"
+                     style="fill:none;stroke:#dddddd;stroke-width:1"
+                     id="line3677"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(160,-200)"
+                     x2="0"
+                     y2="200"
+                     style="fill:none;stroke:#dddddd;stroke-width:1"
+                     id="line3679"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(200,-200)"
+                     x2="0"
+                     y2="200"
+                     style="fill:none;stroke:#dddddd;stroke-width:1"
+                     id="line3681"
+                     x1="0"
+                     y1="0" />
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             class="mark-group role-axis"
+             id="g3683">
+            <g
+               transform="translate(0.5,0.5)"
+               id="g3685">
+              <path
+                 class="background"
+                 d="M 0,0 H 0 V 0 H 0 z"
+                 style="fill:none"
+                 id="path3687"
+                 inkscape:connector-curvature="0" />
+              <g
+                 id="g3689">
+                <g
+                   class="mark-rule role-axis-grid"
+                   id="g3691">
+                  <line
+                     transform="translate(0,200)"
+                     x2="200"
+                     y2="0"
+                     style="fill:none;stroke:#dddddd;stroke-width:1"
+                     id="line3693"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(0,169)"
+                     x2="200"
+                     y2="0"
+                     style="fill:none;stroke:#dddddd;stroke-width:1"
+                     id="line3695"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(0,138)"
+                     x2="200"
+                     y2="0"
+                     style="fill:none;stroke:#dddddd;stroke-width:1"
+                     id="line3697"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(0,108)"
+                     x2="200"
+                     y2="0"
+                     style="fill:none;stroke:#dddddd;stroke-width:1"
+                     id="line3699"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(0,77)"
+                     x2="200"
+                     y2="0"
+                     style="fill:none;stroke:#dddddd;stroke-width:1"
+                     id="line3701"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(0,46)"
+                     x2="200"
+                     y2="0"
+                     style="fill:none;stroke:#dddddd;stroke-width:1"
+                     id="line3703"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(0,15)"
+                     x2="200"
+                     y2="0"
+                     style="fill:none;stroke:#dddddd;stroke-width:1"
+                     id="line3705"
+                     x1="0"
+                     y1="0" />
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             class="mark-group role-scope pathgroup"
+             id="g3707">
+            <g
+               id="g3709">
+              <path
+                 class="background"
+                 d="M 0,0 H 200 V 200 H 0 z"
+                 style="fill:none"
+                 id="path3711"
+                 inkscape:connector-curvature="0" />
+              <g
+                 id="g3713">
+                <g
+                   class="mark-area role-mark marks"
+                   clip-path="url(#clip4)"
+                   id="g3715">
+                  <path
+                     d="m 200,200 0,-61.80769 -40,0 0,5.86154 -40,0 0,10.94 -40,0 0,15.87384 -40,0 L 40,189.8 2e-8,189.8 l 0,10.2 -2e-8,0 0,0 2e-8,0 0,0 L 40,200 l 0,0 40,0 0,0 40,0 0,0 40,0 0,0 40,0 0,0 z"
+                     style="fill:#72b7b2"
+                     id="path3717"
+                     inkscape:connector-curvature="0" />
+                </g>
+              </g>
+            </g>
+            <g
+               id="g3719">
+              <path
+                 class="background"
+                 d="M 0,0 H 200 V 200 H 0 z"
+                 style="fill:none"
+                 id="path3721"
+                 inkscape:connector-curvature="0" />
+              <g
+                 id="g3723">
+                <g
+                   class="mark-area role-mark marks"
+                   clip-path="url(#clip5)"
+                   id="g3725">
+                  <path
+                     d="m 200,200 0,-123.132308 -40,0 0,11.821539 -40,0 0,21.084619 -40,0 0,32.11692 -40,0 0,37.86308 L 2e-8,179.75385 2e-8,200 0,200 l 0,0 2e-8,0 0,-10.2 L 40,189.8 l 0,-18.93231 40,0 0,-15.87384 40,0 0,-10.94 40,0 0,-5.86154 40,0 L 200,200 z"
+                     style="fill:#e45756"
+                     id="path3727"
+                     inkscape:connector-curvature="0" />
+                </g>
+              </g>
+            </g>
+            <g
+               id="g3729">
+              <path
+                 class="background"
+                 d="M 0,0 H 200 V 200 H 0 z"
+                 style="fill:none"
+                 id="path3731"
+                 inkscape:connector-curvature="0" />
+              <g
+                 id="g3733">
+                <g
+                   class="mark-area role-mark marks"
+                   clip-path="url(#clip6)"
+                   id="g3735">
+                  <path
+                     d="m 200,200 0,-184.827692 -40,0 0,17.58 -40,0 0,31.641538 -40,0 0,47.980004 -40,0 0,57.18307 L 2e-8,169.55692 2e-8,200 0,200 l 0,0 2e-8,0 0,-20.24615 L 40,179.75385 l 0,-37.86308 40,0 0,-32.11692 40,0 0,-21.084619 40,0 0,-11.821539 40,0 L 200,200 z"
+                     style="fill:#f58518"
+                     id="path3737"
+                     inkscape:connector-curvature="0" />
+                </g>
+              </g>
+            </g>
+            <g
+               id="g3739">
+              <path
+                 class="background"
+                 d="M 0,0 H 200 V 200 H 0 z"
+                 style="fill:none"
+                 id="path3741"
+                 inkscape:connector-curvature="0" />
+              <g
+                 id="g3743">
+                <g
+                   class="mark-area role-mark marks"
+                   clip-path="url(#clip7)"
+                   id="g3745">
+                  <path
+                     d="m 200,200 0,-184.827692 -40,0 0,17.58 -40,0 0,31.641538 -40,0 0,47.980004 -40,0 0,57.18307 L 2e-8,169.55692 2e-8,200 0,200 l 0,0 2e-8,0 0,-30.44308 L 40,169.55692 l 0,-57.18307 40,0 0,-47.980004 40,0 0,-31.641538 40,0 0,-17.58 40,0 L 200,200 z"
+                     style="fill:#4c78a8"
+                     id="path3747"
+                     inkscape:connector-curvature="0" />
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             class="mark-group role-legend"
+             id="g3749">
+            <g
+               transform="translate(218,0)"
+               id="g3751">
+              <path
+                 class="background"
+                 d="M 0,0 H 104 V 72 H 0 z"
+                 style="fill:none"
+                 id="path3753"
+                 inkscape:connector-curvature="0" />
+              <g
+                 id="g3755">
+                <g
+                   class="mark-group role-legend-entry"
+                   id="g3757">
+                  <g
+                     transform="translate(0,16)"
+                     id="g3759">
+                    <path
+                       class="background"
+                       d="M 0,0 H 0 V 0 H 0 z"
+                       style="fill:none"
+                       id="path3761"
+                       inkscape:connector-curvature="0" />
+                    <g
+                       id="g3763">
+                      <g
+                         class="mark-symbol role-legend-symbol"
+                         id="g3765">
+                        <path
+                           transform="translate(5,5)"
+                           d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                           style="fill:#4c78a8;stroke-width:1.5"
+                           id="path3767"
+                           inkscape:connector-curvature="0" />
+                        <path
+                           transform="translate(5,20)"
+                           d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                           style="fill:#f58518;stroke-width:1.5"
+                           id="path3769"
+                           inkscape:connector-curvature="0" />
+                        <path
+                           transform="translate(5,35)"
+                           d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                           style="fill:#e45756;stroke-width:1.5"
+                           id="path3771"
+                           inkscape:connector-curvature="0" />
+                        <path
+                           transform="translate(5,50)"
+                           d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                           style="fill:#72b7b2;stroke-width:1.5"
+                           id="path3773"
+                           inkscape:connector-curvature="0" />
+                      </g>
+                      <g
+                         class="mark-text role-legend-label"
+                         id="g3775">
+                        <text
+                           transform="translate(18,8)"
+                           style="line-height:0%;text-anchor:start;fill:#000000"
+                           id="text3777">[3.14159, inf]</text>
+                        <text
+                           transform="translate(18,23)"
+                           style="line-height:0%;text-anchor:start;fill:#000000"
+                           id="text3779">[1.0472, 3.14159)</text>
+                        <text
+                           transform="translate(18,38)"
+                           style="line-height:0%;text-anchor:start;fill:#000000"
+                           id="text3781">[-1.0472, 1.0472)</text>
+                        <text
+                           transform="translate(18,53)"
+                           style="line-height:0%;text-anchor:start;fill:#000000"
+                           id="text3783">[-3.14159, -1.0472)</text>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <g
+                   class="mark-text role-legend-title"
+                   id="g3785">
+                  <text
+                     transform="translate(0,9)"
+                     style="line-height:0%;text-anchor:start;fill:#000000"
+                     id="text3787">arctan2(y, x)</text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             class="mark-group role-axis"
+             id="g3789">
+            <g
+               transform="translate(0.5,200.5)"
+               id="g3791">
+              <path
+                 class="background"
+                 d="M 0,0 H 0 V 0 H 0 z"
+                 style="fill:none"
+                 id="path3793"
+                 inkscape:connector-curvature="0" />
+              <g
+                 id="g3795">
+                <g
+                   class="mark-rule role-axis-tick"
+                   id="g3797">
+                  <line
+                     x2="0"
+                     y2="5"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3799"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(40,0)"
+                     x2="0"
+                     y2="5"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3801"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(80,0)"
+                     x2="0"
+                     y2="5"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3803"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(120,0)"
+                     x2="0"
+                     y2="5"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3805"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(160,0)"
+                     x2="0"
+                     y2="5"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3807"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(200,0)"
+                     x2="0"
+                     y2="5"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3809"
+                     x1="0"
+                     y1="0" />
+                </g>
+                <g
+                   class="mark-text role-axis-label"
+                   id="g3811">
+                  <text
+                     transform="translate(0,15)"
+                     style="line-height:0%;text-anchor:start;fill:#000000"
+                     id="text3813">0.0</text>
+                  <text
+                     transform="translate(40,15)"
+                     style="line-height:0%;text-anchor:middle;fill:#000000"
+                     id="text3815">0.2</text>
+                  <text
+                     transform="translate(80,15)"
+                     style="line-height:0%;text-anchor:middle;fill:#000000"
+                     id="text3817">0.4</text>
+                  <text
+                     transform="translate(120,15)"
+                     style="line-height:0%;text-anchor:middle;fill:#000000"
+                     id="text3819">0.6</text>
+                  <text
+                     transform="translate(160,15)"
+                     style="line-height:0%;text-anchor:middle;fill:#000000"
+                     id="text3821">0.8</text>
+                  <text
+                     transform="translate(200,15)"
+                     style="line-height:0%;text-anchor:end;fill:#000000"
+                     id="text3823">1.0</text>
+                </g>
+                <g
+                   class="mark-rule role-axis-domain"
+                   id="g3825">
+                  <line
+                     x2="200"
+                     y2="0"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3827"
+                     x1="0"
+                     y1="0" />
+                </g>
+                <g
+                   class="mark-text role-axis-title"
+                   id="g3829">
+                  <text
+                     transform="translate(100,31)"
+                     style="line-height:0%;text-anchor:middle;fill:#000000"
+                     id="text3831">sqrt(x**2 + y**2)</text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             class="mark-group role-axis"
+             id="g3833">
+            <g
+               transform="translate(0.5,0.5)"
+               id="g3835">
+              <path
+                 class="background"
+                 d="M 0,0 H 0 V 0 H 0 z"
+                 style="fill:none"
+                 id="path3837"
+                 inkscape:connector-curvature="0" />
+              <g
+                 id="g3839">
+                <g
+                   class="mark-rule role-axis-tick"
+                   id="g3841">
+                  <line
+                     transform="translate(0,200)"
+                     x2="-5"
+                     y2="0"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3843"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(0,169)"
+                     x2="-5"
+                     y2="0"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3845"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(0,138)"
+                     x2="-5"
+                     y2="0"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3847"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(0,108)"
+                     x2="-5"
+                     y2="0"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3849"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(0,77)"
+                     x2="-5"
+                     y2="0"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3851"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(0,46)"
+                     x2="-5"
+                     y2="0"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3853"
+                     x1="0"
+                     y1="0" />
+                  <line
+                     transform="translate(0,15)"
+                     x2="-5"
+                     y2="0"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3855"
+                     x1="0"
+                     y1="0" />
+                </g>
+                <g
+                   class="mark-text role-axis-label"
+                   id="g3857">
+                  <text
+                     transform="translate(-7,203)"
+                     style="line-height:0%;text-anchor:end;fill:#000000"
+                     id="text3859">0</text>
+                  <text
+                     transform="translate(-7,172.23077)"
+                     style="line-height:0%;text-anchor:end;fill:#000000"
+                     id="text3861">20,000</text>
+                  <text
+                     transform="translate(-7,141.46154)"
+                     style="line-height:0%;text-anchor:end;fill:#000000"
+                     id="text3863">40,000</text>
+                  <text
+                     transform="translate(-7,110.69231)"
+                     style="line-height:0%;text-anchor:end;fill:#000000"
+                     id="text3865">60,000</text>
+                  <text
+                     transform="translate(-7,79.923077)"
+                     style="line-height:0%;text-anchor:end;fill:#000000"
+                     id="text3867">80,000</text>
+                  <text
+                     transform="translate(-7,49.153846)"
+                     style="line-height:0%;text-anchor:end;fill:#000000"
+                     id="text3869">100,000</text>
+                  <text
+                     transform="translate(-7,18.384615)"
+                     style="line-height:0%;text-anchor:end;fill:#000000"
+                     id="text3871">120,000</text>
+                </g>
+                <g
+                   class="mark-rule role-axis-domain"
+                   id="g3873">
+                  <line
+                     transform="translate(0,200)"
+                     x2="0"
+                     y2="-200"
+                     style="fill:none;stroke:#888888;stroke-width:1"
+                     id="line3875"
+                     x1="0"
+                     y1="0" />
+                </g>
+                <g
+                   class="mark-text role-axis-title"
+                   id="g3877"
+                   transform="translate(-12,0)">
+                  <text
+                     transform="rotate(-90,24.926269,75.07373)"
+                     style="line-height:0%;text-anchor:middle;fill:#000000"
+                     id="text3879">entries per bin</text>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

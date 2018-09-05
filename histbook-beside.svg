@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   class="marks"
+   width="564.76465"
+   height="249.40234"
+   viewBox="0 0 564.76465 249.40234"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="histbook-beside.svg">
+  <metadata
+     id="metadata336">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="922"
+     inkscape:window-height="987"
+     id="namedview334"
+     showgrid="false"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     inkscape:zoom="1.2896175"
+     inkscape:cx="283.12679"
+     inkscape:cy="118.73929"
+     inkscape:window-x="992"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g20" />
+  <defs
+     id="defs4">
+    <clipPath
+       id="clip1">
+      <rect
+         x="0"
+         y="0"
+         width="200"
+         height="200"
+         id="rect7" />
+    </clipPath>
+    <clipPath
+       id="clip2">
+      <rect
+         x="0"
+         y="0"
+         width="200"
+         height="200"
+         id="rect10" />
+    </clipPath>
+  </defs>
+  <g
+     transform="translate(75.764648,10.40625)"
+     id="g12">
+    <g
+       class="mark-group role-frame root"
+       id="g14">
+      <g
+         id="g16">
+        <path
+           class="background"
+           d="M 0,0 H 0 V 200 H 0 z"
+           style="fill:none"
+           id="path18"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g20">
+          <g
+             class="mark-group role-scope concat_0_group"
+             id="g22">
+            <g
+               id="g24">
+              <path
+                 class="background"
+                 d="m 0.5,0.5 h 200 v 200 H 0.5 z"
+                 style="fill:none;stroke:#dddddd"
+                 id="path26"
+                 inkscape:connector-curvature="0" />
+              <g
+                 id="g28">
+                <g
+                   class="mark-group role-axis"
+                   id="g30">
+                  <g
+                     transform="translate(0.5,200.5)"
+                     id="g32">
+                    <path
+                       class="background"
+                       d="M 0,0 H 0 V 0 H 0 z"
+                       style="fill:none"
+                       id="path34"
+                       inkscape:connector-curvature="0" />
+                    <g
+                       id="g36">
+                      <g
+                         class="mark-rule role-axis-grid"
+                         id="g38">
+                        <line
+                           transform="translate(0,-200)"
+                           x2="0"
+                           y2="200"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line40"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(40,-200)"
+                           x2="0"
+                           y2="200"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line42"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(80,-200)"
+                           x2="0"
+                           y2="200"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line44"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(120,-200)"
+                           x2="0"
+                           y2="200"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line46"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(160,-200)"
+                           x2="0"
+                           y2="200"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line48"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(200,-200)"
+                           x2="0"
+                           y2="200"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line50"
+                           x1="0"
+                           y1="0" />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <g
+                   class="mark-group role-axis"
+                   id="g52">
+                  <g
+                     transform="translate(0.5,0.5)"
+                     id="g54">
+                    <path
+                       class="background"
+                       d="M 0,0 H 0 V 0 H 0 z"
+                       style="fill:none"
+                       id="path56"
+                       inkscape:connector-curvature="0" />
+                    <g
+                       id="g58">
+                      <g
+                         class="mark-rule role-axis-grid"
+                         id="g60">
+                        <line
+                           transform="translate(0,200)"
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line62"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,167)"
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line64"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,133)"
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line66"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,100)"
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line68"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,67)"
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line70"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,33)"
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line72"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line74"
+                           x1="0"
+                           y1="0" />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <g
+                   class="mark-line role-mark concat_0_marks"
+                   clip-path="url(#clip1)"
+                   id="g76">
+                  <path
+                     d="m 200,200 0,-199.26166667 -40,0 0,17.65999967 -40,0 0,35.345 -40,0 0,51.098337 -40,0 0,62.12166 L 2e-8,166.96333 2e-8,200 0,200"
+                     style="fill:none;stroke:#4c78a8;stroke-width:2"
+                     id="path78"
+                     inkscape:connector-curvature="0" />
+                </g>
+                <g
+                   class="mark-group role-axis"
+                   id="g80">
+                  <g
+                     transform="translate(0.5,200.5)"
+                     id="g82">
+                    <path
+                       class="background"
+                       d="M 0,0 H 0 V 0 H 0 z"
+                       style="fill:none"
+                       id="path84"
+                       inkscape:connector-curvature="0" />
+                    <g
+                       id="g86">
+                      <g
+                         class="mark-rule role-axis-tick"
+                         id="g88">
+                        <line
+                           x2="0"
+                           y2="5"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line90"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(40,0)"
+                           x2="0"
+                           y2="5"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line92"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(80,0)"
+                           x2="0"
+                           y2="5"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line94"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(120,0)"
+                           x2="0"
+                           y2="5"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line96"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(160,0)"
+                           x2="0"
+                           y2="5"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line98"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(200,0)"
+                           x2="0"
+                           y2="5"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line100"
+                           x1="0"
+                           y1="0" />
+                      </g>
+                      <g
+                         class="mark-text role-axis-label"
+                         id="g102">
+                        <text
+                           transform="translate(0,15)"
+                           style="line-height:0%;text-anchor:start;fill:#000000"
+                           id="text104">0.0</text>
+                        <text
+                           transform="translate(40,15)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text106">0.2</text>
+                        <text
+                           transform="translate(80,15)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text108">0.4</text>
+                        <text
+                           transform="translate(120,15)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text110">0.6</text>
+                        <text
+                           transform="translate(160,15)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text112">0.8</text>
+                        <text
+                           transform="translate(200,15)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text114">1.0</text>
+                      </g>
+                      <g
+                         class="mark-rule role-axis-domain"
+                         id="g116">
+                        <line
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line118"
+                           x1="0"
+                           y1="0" />
+                      </g>
+                      <g
+                         class="mark-text role-axis-title"
+                         id="g120">
+                        <text
+                           transform="translate(100,31)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text122">sqrt(x**2 + y**2)</text>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <g
+                   class="mark-group role-axis"
+                   id="g124">
+                  <g
+                     transform="translate(0.5,0.5)"
+                     id="g126">
+                    <path
+                       class="background"
+                       d="M 0,0 H 0 V 0 H 0 z"
+                       style="fill:none"
+                       id="path128"
+                       inkscape:connector-curvature="0" />
+                    <g
+                       id="g130">
+                      <g
+                         class="mark-rule role-axis-tick"
+                         id="g132">
+                        <line
+                           transform="translate(0,200)"
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line134"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,167)"
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line136"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,133)"
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line138"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,100)"
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line140"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,67)"
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line142"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,33)"
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line144"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line146"
+                           x1="0"
+                           y1="0" />
+                      </g>
+                      <g
+                         class="mark-text role-axis-label"
+                         id="g148">
+                        <text
+                           transform="translate(-7,203)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text150">0</text>
+                        <text
+                           transform="translate(-7,169.66667)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text152">20,000</text>
+                        <text
+                           transform="translate(-7,136.33333)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text154">40,000</text>
+                        <text
+                           transform="translate(-7,103)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text156">60,000</text>
+                        <text
+                           transform="translate(-7,69.666667)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text158">80,000</text>
+                        <text
+                           transform="translate(-7,36.333333)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text160">100,000</text>
+                        <text
+                           transform="translate(-7,3)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text162">120,000</text>
+                      </g>
+                      <g
+                         class="mark-rule role-axis-domain"
+                         id="g164">
+                        <line
+                           transform="translate(0,200)"
+                           x2="0"
+                           y2="-200"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line166"
+                           x1="0"
+                           y1="0" />
+                      </g>
+                      <g
+                         class="mark-text role-axis-title"
+                         id="g168"
+                         transform="translate(-12,0)">
+                        <text
+                           transform="rotate(-90,24.926269,75.07373)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text170">entries per bin</text>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             class="mark-group role-scope concat_1_group"
+             id="g172"
+             transform="translate(8,0)">
+            <g
+               transform="translate(275,0)"
+               id="g174">
+              <path
+                 class="background"
+                 d="m 0.5,0.5 h 200 v 200 H 0.5 z"
+                 style="fill:none;stroke:#dddddd"
+                 id="path176"
+                 inkscape:connector-curvature="0" />
+              <g
+                 id="g178">
+                <g
+                   class="mark-group role-axis"
+                   id="g180">
+                  <g
+                     transform="translate(0.5,200.5)"
+                     id="g182">
+                    <path
+                       class="background"
+                       d="M 0,0 H 0 V 0 H 0 z"
+                       style="fill:none"
+                       id="path184"
+                       inkscape:connector-curvature="0" />
+                    <g
+                       id="g186">
+                      <g
+                         class="mark-rule role-axis-grid"
+                         id="g188">
+                        <line
+                           transform="translate(14,-200)"
+                           x2="0"
+                           y2="200"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line190"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(43,-200)"
+                           x2="0"
+                           y2="200"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line192"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(71,-200)"
+                           x2="0"
+                           y2="200"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line194"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(100,-200)"
+                           x2="0"
+                           y2="200"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line196"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(129,-200)"
+                           x2="0"
+                           y2="200"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line198"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(157,-200)"
+                           x2="0"
+                           y2="200"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line200"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(186,-200)"
+                           x2="0"
+                           y2="200"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line202"
+                           x1="0"
+                           y1="0" />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <g
+                   class="mark-group role-axis"
+                   id="g204">
+                  <g
+                     transform="translate(0.5,0.5)"
+                     id="g206">
+                    <path
+                       class="background"
+                       d="M 0,0 H 0 V 0 H 0 z"
+                       style="fill:none"
+                       id="path208"
+                       inkscape:connector-curvature="0" />
+                    <g
+                       id="g210">
+                      <g
+                         class="mark-rule role-axis-grid"
+                         id="g212">
+                        <line
+                           transform="translate(0,200)"
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line214"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,171)"
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line216"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,143)"
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line218"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,114)"
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line220"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,86)"
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line222"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,57)"
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line224"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,29)"
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line226"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#dddddd;stroke-width:1"
+                           id="line228"
+                           x1="0"
+                           y1="0" />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <g
+                   class="mark-line role-mark concat_1_marks"
+                   clip-path="url(#clip2)"
+                   id="g230">
+                  <path
+                     d="m 189.75979,200 0,-190.5702857 -59.83986,0 0,0.1422857 -59.83986,0 0,-0.00229 -59.83986,0 0,190.43029 0,0"
+                     style="fill:none;stroke:#4c78a8;stroke-width:2"
+                     id="path232"
+                     inkscape:connector-curvature="0" />
+                </g>
+                <g
+                   class="mark-group role-axis"
+                   id="g234">
+                  <g
+                     transform="translate(0.5,200.5)"
+                     id="g236">
+                    <path
+                       class="background"
+                       d="M 0,0 H 0 V 0 H 0 z"
+                       style="fill:none"
+                       id="path238"
+                       inkscape:connector-curvature="0" />
+                    <g
+                       id="g240">
+                      <g
+                         class="mark-rule role-axis-tick"
+                         id="g242">
+                        <line
+                           transform="translate(14,0)"
+                           x2="0"
+                           y2="5"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line244"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(43,0)"
+                           x2="0"
+                           y2="5"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line246"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(71,0)"
+                           x2="0"
+                           y2="5"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line248"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(100,0)"
+                           x2="0"
+                           y2="5"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line250"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(129,0)"
+                           x2="0"
+                           y2="5"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line252"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(157,0)"
+                           x2="0"
+                           y2="5"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line254"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(186,0)"
+                           x2="0"
+                           y2="5"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line256"
+                           x1="0"
+                           y1="0" />
+                      </g>
+                      <g
+                         class="mark-text role-axis-label"
+                         id="g258">
+                        <text
+                           transform="translate(14.285714,15)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text260">-3</text>
+                        <text
+                           transform="translate(42.857143,15)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text262">-2</text>
+                        <text
+                           transform="translate(71.428571,15)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text264">-1</text>
+                        <text
+                           transform="translate(100,15)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text266">0</text>
+                        <text
+                           transform="translate(128.57143,15)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text268">1</text>
+                        <text
+                           transform="translate(157.14286,15)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text270">2</text>
+                        <text
+                           transform="translate(185.71429,15)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text272">3</text>
+                      </g>
+                      <g
+                         class="mark-rule role-axis-domain"
+                         id="g274">
+                        <line
+                           x2="200"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line276"
+                           x1="0"
+                           y1="0" />
+                      </g>
+                      <g
+                         class="mark-text role-axis-title"
+                         id="g278">
+                        <text
+                           transform="translate(100,31)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text280">arctan2(y, x)</text>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <g
+                   class="mark-group role-axis"
+                   id="g282">
+                  <g
+                     transform="translate(0.5,0.5)"
+                     id="g284">
+                    <path
+                       class="background"
+                       d="M 0,0 H 0 V 0 H 0 z"
+                       style="fill:none"
+                       id="path286"
+                       inkscape:connector-curvature="0" />
+                    <g
+                       id="g288">
+                      <g
+                         class="mark-rule role-axis-tick"
+                         id="g290">
+                        <line
+                           transform="translate(0,200)"
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line292"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,171)"
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line294"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,143)"
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line296"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,114)"
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line298"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,86)"
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line300"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,57)"
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line302"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           transform="translate(0,29)"
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line304"
+                           x1="0"
+                           y1="0" />
+                        <line
+                           x2="-5"
+                           y2="0"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line306"
+                           x1="0"
+                           y1="0" />
+                      </g>
+                      <g
+                         class="mark-text role-axis-label"
+                         id="g308">
+                        <text
+                           transform="translate(-7,203)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text310">0</text>
+                        <text
+                           transform="translate(-7,174.42857)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text312">50,000</text>
+                        <text
+                           transform="translate(-7,145.85714)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text314">100,000</text>
+                        <text
+                           transform="translate(-7,117.28571)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text316">150,000</text>
+                        <text
+                           transform="translate(-7,88.714286)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text318">200,000</text>
+                        <text
+                           transform="translate(-7,60.142857)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text320">250,000</text>
+                        <text
+                           transform="translate(-7,31.571429)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text322">300,000</text>
+                        <text
+                           transform="translate(-7,3)"
+                           style="line-height:0%;text-anchor:end;fill:#000000"
+                           id="text324">350,000</text>
+                      </g>
+                      <g
+                         class="mark-rule role-axis-domain"
+                         id="g326">
+                        <line
+                           transform="translate(0,200)"
+                           x2="0"
+                           y2="-200"
+                           style="fill:none;stroke:#888888;stroke-width:1"
+                           id="line328"
+                           x1="0"
+                           y1="0" />
+                      </g>
+                      <g
+                         class="mark-text role-axis-title"
+                         id="g330"
+                         transform="translate(-12,0)">
+                        <text
+                           transform="rotate(-90,24.926269,75.07373)"
+                           style="line-height:0%;text-anchor:middle;fill:#000000"
+                           id="text332">entries per bin</text>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
