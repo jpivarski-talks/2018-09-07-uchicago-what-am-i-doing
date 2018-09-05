@@ -22,6 +22,7 @@
 \usepackage{minted}
 \usepackage[thicklines]{cancel}
 \usepackage{fancyvrb}
+\usepackage{tabto}
 
 \xdefinecolor{dianablue}{rgb}{0.18,0.24,0.31}
 \xdefinecolor{darkblue}{rgb}{0.1,0.1,0.7}
@@ -97,6 +98,105 @@ I often talk about a ``query service'' to end our reliance on private skims befo
 \end{columns}
 \end{frame}
 
+\begin{frame}{}
+\Large
+\vspace{1 cm}
+\begin{center}
+\textcolor{darkblue}{Last topic first: columnar manipulation of nested structures}
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Take inspiration from array programming}
+\vspace{0.1 cm}
+\hfill \includegraphics[height=2.75 cm]{apl-timeline.pdf}
+
+\vspace{-2.15 cm}
+{\bf\large Array programming: Matlab/R/Numpy}
+
+\vspace{0.5 cm}
+Expresses regular operations over \\ rectangular data structures in shorthand.
+
+\vspace{0.25 cm}
+\begin{itemize}\setlength{\itemsep}{0.15 cm}
+\item Multidimensional slices: \tabto{5.5 cm}{\small \mintinline{python}{rgb_pixels[0, 50:100, ::3]}}
+\item Elementwise operations: \tabto{5.5 cm}{\small \mintinline{python}{all_pz = all_pt * sinh(all_eta)}}
+\item Broadcasting: \tabto{5.5 cm}{\small \mintinline{python}{all_phi - 2*pi}}
+\item Masking (list compaction): \tabto{5.5 cm}{\small \mintinline{python}{data[trigger & (pt > 40)]}}
+\item Fancy indexing (gather/scatter): \tabto{5.5 cm}{\small \mintinline{python}{all_eta[argsort(all_pt)]}}
+\item Row/column commutativity \tabto{5.5 cm}{\small \mintinline{python}{table["column"][7]} (row 7 of column array)}
+
+(hides AoS $\leftrightarrow$ SoA): \tabto{5.5 cm}{\small \mintinline{python}{table[7]["column"]} (field of row tuple 7)}
+\item Array reduction: \tabto{5.5 cm}{\small \mintinline{python}{array.sum()}} $\to$ scalar
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Extension to variable-sized, nested structures}
+\vspace{0.5 cm}
+Logical structure: \tabto{3 cm}{\ttfamily\textcolor{black}{[\textcolor{red}{[}\textcolor{darkblue}{0, 1, 2}], \textcolor{red}{[}], \textcolor{red}{[}\textcolor{darkblue}{3, 4}], \textcolor{red}{[}\textcolor{darkblue}{5, 6, 7, 8, 9}]\textcolor{red}{]}}}
+
+\vspace{0.05 cm}
+Offsets:           \tabto{3 cm}{\ttfamily\verb|[|\textcolor{red}{0,}\verb|         |\textcolor{red}{3,}\verb|  |\textcolor{red}{3,}\verb|      |\textcolor{red}{5,}\verb|             |\textcolor{red}{10}\verb|]|}
+
+\vspace{0.05 cm}
+Content:           \tabto{3 cm}{\ttfamily\verb|[ |\textcolor{darkblue}{0, 1, 2}\verb|,       |\textcolor{darkblue}{3, 4}\verb|,   |\textcolor{darkblue}{5, 6, 7, 8, 9}\verb|]|}
+
+\vspace{0.05 cm}
+Parents:           \tabto{3 cm}{\ttfamily\verb|[ |\textcolor{darkgreen}{0, 0, 0}\verb|        |\textcolor{purple}{2, 2,}\verb|   |\textcolor{darkorange}{3, 3, 3, 3, 3}\verb|]|}
+
+\vspace{0.5 cm}
+A ``jagged array'' (content $+$ offsets and/or content $+$ parents) is a basic building block of variable-sized, nested structure.
+
+\begin{itemize}
+\item use a jagged array as the content of another jagged array to get {\tt\small list<list<X>>}
+\item use a fixed-size rectangular array of dimension {\tt\small N} as content to get {\tt\small list<X[N]>}
+\item use a fixed-size rectangular array of dimension {\tt\small M} as offsets to get {\tt\small list<X>[M]}
+\end{itemize}
+
+\vspace{0.5 cm}
+Add columnar tables to the mix and you automatically get jagged tables: particle structs in events.
+
+\end{frame}
+
+\begin{frame}{Array programming can be extended to jagged arrays}
+\vspace{0.1 cm}
+\begin{columns}
+\column{1.05\linewidth}
+\begin{itemize}\setlength{\itemsep}{0.15 cm}
+\item Multidimensional slices: \tabto{5.5 cm}{\small \mintinline{python}{events["jets"][:, 0]}} $\to$ first jet per event
+\item Elementwise operations: \tabto{5.5 cm}{\small \mintinline{python}{jetpt * sinh(jeteta)}} $\to$ \mbox{keep jagged structure\hspace{-1 cm}}
+\item Broadcasting: \tabto{5.5 cm}{\small \mintinline{python}{jetphi - metphi}} $\to$ expand {\small \mintinline{python}{metphi}} from
+
+\tabto{5.5 cm}one-per-event to one-per-jet before operation
+
+\item Masking (list compaction): \tabto{5.5 cm}{\small \mintinline{python}{data[trigger]}} $\to$ drop whole events
+
+\tabto{5.5 cm}{\small \mintinline{python}{data[jetpt > 40]}} $\to$ drop jets from events
+
+\item Fancy indexing (gather/scatter): \tabto{5.5 cm}{\small \mintinline{python}{a = argmax(jetpt)}} $\to$ \mbox{\small \mintinline{python}{[[2], [], [1], [4]]}\hspace{-0.5 cm}}
+
+\tabto{5.5 cm}{\small \mintinline{python}{jeteta[a]}} $\to$ \mbox{\small \mintinline{python}{[[3.6], [], [-1.2], [0.4]]}\hspace{-0.5 cm}}
+
+\item Row/column commutativity \tabto{5.5 cm}{\small \mintinline{python}{events["jets"]["pt"][7, 1]}} \mbox{(all the same)\hspace{-0.5 cm}}
+
+(project jagged tables to \tabto{5.5 cm}{\small \mintinline{python}{events["jets"][7]["pt"][1]}}
+
+jagged arrays before indexing): \tabto{5.5 cm}{\small \mintinline{python}{events[7]["jets"]["pt"][1]}}
+
+\tabto{5.5 cm}{\small \mintinline{python}{events["jets"][7, 1]["pt"]}}
+
+\tabto{5.5 cm}{\small \mintinline{python}{events[7]["jets"][1]["pt"]}}
+
+\item Jagged array reduction: \tabto{5.5 cm}{\small \mintinline{python}{jetpt.max()}} $\to$ array of max jet $p_T$ per event
+\end{itemize}
+\end{columns}
+\end{frame}
+
+
+
+
+\begin{frame}
+
+\end{frame}
 
 
 
