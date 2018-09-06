@@ -116,13 +116,13 @@ Short time to compute each simple function
 
 \item \textcolor{darkblue}{\large Query language:} \uncover<3->{Femtocode, my analysis-specialized, zero-runtime-error query language is a working concept, but a new language is not the \underline{\it first} thing we need. I might revive this key ideas in Harrison Prosper and Sezen Sekmen's ``Les Houches Analysis Language'' project.}
 
-\item \textcolor{darkblue}{\large Columnar data storage/management:} \uncover<4->{my intention to collaborate with Carlos Maltzahn's UCSC group petered out. Same with Tanu Malik's database indexing group at DePaul (though indexing is not an \underline{\it early} need). But there's a robust project here at U.Chicago.}
+\item \textcolor{darkblue}{\large Columnar data storage/management:} \uncover<4->{My intention to collaborate with Carlos Maltzahn's UCSC group petered out. Same with Tanu Malik's database indexing group at DePaul (though indexing is not an \underline{\it early} need). But there's a robust project here at U.\ Chicago.}
 
-\item \textcolor{darkblue}{\large Columnar ROOT access:} \uncover<5->{originally intended as just a data backend, \textcolor{darkorange}{\bf uproot} is crazy popular. Turning this into a user library diverted some time, but I think it's well spent.}
+\item \textcolor{darkblue}{\large Columnar ROOT access:} \uncover<5->{Originally intended as just a data backend, \textcolor{darkorange}{\bf uproot} is crazy popular. Turning this into a user-ready library diverted some time, but I think it's well spent.}
 
-\item \textcolor{darkblue}{\large Columnar histogramming:} \uncover<6->{intended as an output format for the query service; \textcolor{darkorange}{\bf histbook} was written early to help uproot users do traditional HEP analysis on arrays (to get user feedback).}
+\item \textcolor{darkblue}{\large Columnar histogramming:} \uncover<6->{Intended as an output format for the query service; \textcolor{darkorange}{\bf histbook} was written early to help uproot users do traditional HEP analysis on arrays (to get user feedback).}
 
-\item \textcolor{darkblue}{\large Event/subevent processing engine:} \uncover<7->{columnar manipulation of nested structures is missing from both the data science \underline{\it and} HEP software stacks; opportunity for original CS research.}
+\item \textcolor{darkblue}{\large Event/subevent processing engine:} \uncover<7->{Columnar manipulation of nested structures is missing from both the data science \underline{\it and} HEP software stacks; opportunity for original CS research.}
 \end{itemize}
 \end{columns}
 \end{frame}
@@ -345,7 +345,7 @@ Only four types of arrays are needed to make a reasonably complete typesystem ({
 
 \vspace{0.25 cm}
 \begin{uncoverenv}<2->
-As well as cross-references ({\bf PLURP} for arbitrary trees, graphs, enum-encoding):
+As well as cross-references ({\bf PLURP} for arbitrary trees, graphs, \mbox{enum-encoding strings):\hspace{-0.5 cm}}
 \begin{itemize}
 \item {\bf P}ointer: indexed array, possibly with circular references
 \end{itemize}
@@ -400,7 +400,7 @@ boosted_jets = jets.boost(leading.boostvector())    # broadcasted
 
 \begin{frame}{uproot is crazy popular}
 \vspace{0.5 cm}
-Nearly 1~year from version~1.0 to version~3.0.0b2 $\to$ 551 unique downloaders.
+Nearly 1~year from version~1.0 to version~3.0.0b2 $\to$ \textcolor{darkorange}{\bf 551 unique downloaders.}
 
 \textcolor{gray}{\scriptsize (``Uniqueness'' defined as same country code, OS distribution, version, and kernel; may over- or under-count.)}
 
