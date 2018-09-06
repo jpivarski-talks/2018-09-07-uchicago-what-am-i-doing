@@ -456,8 +456,8 @@ The key is that uproot does {\it less work---} it only delivers arrays (jagged a
 \begin{itemize}\setlength{\itemsep}{0.1 cm}
 \item Must be array-ready: vectorized {\tt\small fill} method.
 \item Should be able to delay plotting decisions: multidimensional block of bins for later slicing and projecting.
-\item Should represent multiple, related histograms, fillable en masse: ``books'' of histograms. Ideally, those relationships should be passed on to a multi-channel fitter.
-\item Also needs to include small ntuples (TODO).
+\item Should represent multiple, related histograms, fillable en masse: ``books'' of histograms. Ideally, those relationships should be passed on to a multi-channel fitter like HistFactory or HiggsCombiner.
+\item Also must be capable of small ntuples for unbinned fits (TODO).
 \end{itemize}
 \end{frame}
 
