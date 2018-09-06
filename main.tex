@@ -523,18 +523,15 @@ Books of related histograms for HistFactory/HiggsCombiner.
 \vspace{0.5 cm}
 \begin{center}
 \begin{minipage}{0.75\linewidth}
-The array processing and columnar granularity I've discussed is to improve throughput of simple tasks, like queries.
+Responding to queries quickly requires low latency: caching input data on the workers (RAM and/or spillover to disk).
 
-\vspace{0.75 cm}
-Responding to queries quickly also requires low latency: caching input data {\it on the workers.}
-
-\vspace{0.75 cm}
+\vspace{1 cm}
 To use worker-cache effectively, tasks must be sent to the worker with the most inputs for that task in cache.
 \end{minipage}
 \end{center}
 \end{frame}
 
-\begin{frame}{Cache-aware task placement by {\it pulling} work to workers}
+\begin{frame}{Cache-aware task placement by pulling work to workers}
 \vspace{0.5 cm}
 Task {\it pool}, not a strict {\it queue}.
 
