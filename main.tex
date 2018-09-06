@@ -57,14 +57,6 @@
 
 % START START START START START START START START START START START START START
 
-\begin{frame}{}
-\Large
-\vspace{0.5 cm}
-\begin{center}
-\textcolor{darkblue}{It's good to give a talk like this because I don't have any \\ ``status report'' meetings to force myself to review.}
-\end{center}
-\end{frame}
-
 \begin{frame}{End goal: query service}
 \large
 \vspace{0.5 cm}
@@ -114,15 +106,15 @@ Short time to compute each simple function
 \begin{itemize}
 \item \textcolor{darkblue}{\large Distributed query scheduling:} \uncover<2->{Experimented, have some leads; not actively developing. Igor Mandrichenko's FNAL LDRD project is a promising prototype. Joosep Pata starting on a concept at Caltech. ROOT considering a revamped PROOF. Spark and Dask don't look like realistic options.}
 
-\item \textcolor{darkblue}{\large Query language:} \uncover<3->{Femtocode, my analysis-specialized, zero-runtime-error query language is a working concept, but a new language is not the \underline{\it first} thing we need. I might revive this key ideas in Harrison Prosper and Sezen Sekmen's ``Les Houches Analysis Language'' project.}
+\item \textcolor{darkblue}{\large Query language:} \uncover<3->{Femtocode--- an analysis-specialized, zero-runtime-error query language--- is a working concept, but a new language is not the \underline{\it first} thing we need. I may revive key ideas in association with Harrison Prosper and Sezen Sekmen's ``Les Houches Analysis Language'' project.}
 
-\item \textcolor{darkblue}{\large Columnar data storage/management:} \uncover<4->{My intention to collaborate with Carlos Maltzahn's UCSC group petered out. Same with Tanu Malik's database indexing group at DePaul (though indexing is not an \underline{\it early} need). But there's a robust project here at U.\ Chicago.}
+\item \textcolor{darkblue}{\large Columnar data storage/management:} \uncover<4->{My intention to collaborate with Carlos Maltzahn's UCSC group petered out. Same with Tanu Malik's database indexing group at DePaul (though database-style indexing is not an \underline{\it early} need). But there's a robust project here at U.\ Chicago.}
 
 \item \textcolor{darkblue}{\large Columnar ROOT access:} \uncover<5->{Originally intended as just a data backend, \textcolor{darkorange}{\bf uproot} is crazy popular. Turning this into a user-ready library diverted some time, but I think it's well spent.}
 
 \item \textcolor{darkblue}{\large Columnar histogramming:} \uncover<6->{Intended as an output format for the query service; \textcolor{darkorange}{\bf histbook} was written early to help uproot users do traditional HEP analysis on arrays (to get user feedback).}
 
-\item \textcolor{darkblue}{\large Event/subevent processing engine:} \uncover<7->{Columnar manipulation of nested structures is missing from both the data science \underline{\it and} HEP software stacks; opportunity for original CS research.}
+\item \textcolor{darkblue}{\large Event/subevent processing engine:} \uncover<7->{Columnar manipulation of nested structures is missing from both the data science \underline{\it and} HEP software stacks; significant performance gains.}
 \end{itemize}
 \end{columns}
 \end{frame}
@@ -295,7 +287,7 @@ events["best"] = events["leptoquarks"][argbest]
 \end{frame}
 
 \begin{frame}{These array programming primitives are vectorizable in hardware}
-\vspace{0.25 cm}
+\vspace{0.5 cm}
 \hfill \begin{minipage}{0.2\linewidth}
 \begin{center}
 \includegraphics[height=2.5 cm]{jaydeep.jpg}
@@ -307,7 +299,7 @@ events["best"] = events["leptoquarks"][argbest]
 \vspace{-3.55 cm}
 \includegraphics[width=0.75\linewidth]{hillis-steele-3.pdf}
 
-\vspace{-1.5 cm} Do a parallel prefix scan to compute a cumulative sum in parallel, but use ``parents'' array to mask for same event, then select the last in each event. \vspace{1.5 cm}
+\vspace{-2 cm} Do a parallel prefix scan to compute a cumulative sum in parallel, but use ``parents'' array to mask for same event, then select the last in each event. \vspace{2 cm}
 \end{frame}
 
 \begin{frame}{These array programming primitives are vectorizable in hardware}
@@ -333,21 +325,21 @@ events["best"] = events["leptoquarks"][argbest]
 \textcolor{blue}{\small\url{https://github.com/jpivarski/jupyter-performance-studies/blob/master/2018-09-10-jagged-reduction.ipynb}}
 \end{frame}
 
-\begin{frame}[fragile]{Like Femtocode, but without the zero-runtime-error guarantee}
+\begin{frame}[fragile]{``Femtocode Lite?''}
 \vspace{0.25 cm}
 Only four types of arrays are needed to make a reasonably complete typesystem ({\bf PLUR}, as expressive as Protobuf, Avro, Parquet, Arrow, \ldots):
 \begin{itemize}
-\item {\bf P}rimitive: plain Numpy arrays of numbers, booleans (anything fixed-width)
-\item {\bf L}ist: jagged arrays
-\item {\bf U}nion: tagged, indexed tuple of arrays
-\item {\bf R}ecord: mapping from names to arrays (table)
+\item {\bf P}rimitives: plain Numpy arrays of numbers, booleans (anything fixed-width)
+\item {\bf L}ists: jagged arrays
+\item {\bf U}nions: tagged, indexed tuple of arrays, for limited heterogeneity
+\item {\bf R}ecords: mapping from names to arrays
 \end{itemize}
 
 \vspace{0.25 cm}
 \begin{uncoverenv}<2->
-As well as cross-references ({\bf PLURP} for arbitrary trees, graphs, \mbox{enum-encoding strings):\hspace{-0.5 cm}}
+As well as cross-references ({\bf PLURP}) for arbitrary trees, graphs, \mbox{enum-encoding strings:\hspace{-0.5 cm}}
 \begin{itemize}
-\item {\bf P}ointer: indexed array, possibly with circular references
+\item {\bf P}ointers: indexed array, possibly as a circular reference
 \end{itemize}
 \end{uncoverenv}
 
@@ -404,11 +396,14 @@ Nearly 1~year from version~1.0 to version~3.0.0b2 $\to$ \textcolor{darkorange}{\
 
 \textcolor{gray}{\scriptsize (``Uniqueness'' defined as same country code, OS distribution, version, and kernel; may over- or under-count.)}
 
-\includegraphics[height=4.2 cm]{uproot-pip-vsweek.pdf}
-\only<1>{\hfill \includegraphics[height=4.2 cm]{uproot-pip-numdownloads.pdf}}
-\only<2-3>{\includegraphics[height=4.2 cm]{uproot-pip-vscountry.pdf}}
-\only<2>{\includegraphics[height=4.2 cm]{uproot-pip-vsos.pdf}}
-\only<3>{\includegraphics[height=4.2 cm]{uproot-pip-vsoscountry.pdf}}
+\begin{columns}
+\column{1.1\linewidth}
+\includegraphics[height=4.7 cm]{uproot-pip-vsweek.pdf}
+\only<1>{\hfill \includegraphics[height=4.7 cm]{uproot-pip-numdownloads.pdf}}
+\only<2-3>{\includegraphics[height=4.7 cm]{uproot-pip-vscountry.pdf}}
+\only<2>{\includegraphics[height=4.7 cm]{uproot-pip-vsos.pdf}}
+\only<3>{\includegraphics[height=4.7 cm]{uproot-pip-vsoscountry.pdf}}
+\end{columns}
 \end{frame}
 
 \begin{frame}{Pure Python+Numpy has good performance for large baskets}
@@ -525,7 +520,6 @@ Books of related histograms for HistFactory/HiggsCombiner.
 \vspace{0.5 cm}
 \begin{center}
 \begin{minipage}{0.75\linewidth}
-\begin{center}
 The array processing and columnar granularity I've discussed is to improve throughput of simple tasks, like queries.
 
 \vspace{0.75 cm}
@@ -533,12 +527,14 @@ Responding to queries quickly also requires low latency: caching input data {\it
 
 \vspace{0.75 cm}
 To use worker-cache effectively, tasks must be sent to the worker with the most inputs for that task in cache.
-\end{center}
 \end{minipage}
 \end{center}
 \end{frame}
 
 \begin{frame}{Cache-aware task placement by {\it pulling} work to workers}
+\vspace{0.5 cm}
+Task {\it pool}, not a strict {\it queue}.
+
 \vspace{0.25 cm}
 \only<1>{\includegraphics[width=\linewidth]{tasks-89.pdf}}
 \only<2>{\includegraphics[width=\linewidth]{tasks-90.pdf}}
@@ -567,11 +563,9 @@ To use worker-cache effectively, tasks must be sent to the worker with the most 
 \begin{itemize}\setlength{\itemsep}{0.5 cm}
 \item Still motivated by the idea of a query service, although that's a big problem with many parts; probably a lot of smaller projects will have to come together from different people.
 
-\item I've been concentrating on the columnar array processing part because it's so underdeveloped (inside and outside of HEP).
+\item I've been concentrating on the columnar array processing part because it's such low-hanging fruit for accelerating simple tasks.
 
-\item Some of these things are useful in the short term, before any query service exists. I'm pushing those for user feedback.
-
-\item Looking forward to collaborations.  {\tt\small :)}
+\item Some of these things are useful in the short term, before any query service exists. I'm productizing those to get user feedback.
 \end{itemize}
 \end{frame}
 
