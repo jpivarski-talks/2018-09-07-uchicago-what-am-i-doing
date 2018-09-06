@@ -286,8 +286,8 @@ events["best"] = events["leptoquarks"][argbest]
 \end{minted}
 \end{frame}
 
-\begin{frame}{These array programming primitives are vectorizable in hardware}
-\vspace{0.5 cm}
+\begin{frame}{Array primitives are vectorizable: for example, jagged reduction}
+\vspace{0.3 cm}
 \hfill \begin{minipage}{0.2\linewidth}
 \begin{center}
 \includegraphics[height=2.5 cm]{jaydeep.jpg}
@@ -299,7 +299,7 @@ events["best"] = events["leptoquarks"][argbest]
 \vspace{-3.55 cm}
 \includegraphics[width=0.75\linewidth]{hillis-steele-3.pdf}
 
-\vspace{-2 cm} Do a parallel prefix scan to compute a cumulative sum in parallel, but use ``parents'' array to mask for same event, then select the last in each event. \vspace{2 cm}
+\vspace{-2.1 cm} Do a parallel prefix scan to compute a cumulative reduction in parallel, but use the ``parents'' array as a mask to get cumulative reduction per group, then select the last in each group. These are the reduced groups. \vspace{2.1 cm}
 \end{frame}
 
 \begin{frame}{These array programming primitives are vectorizable in hardware}
@@ -325,7 +325,7 @@ events["best"] = events["leptoquarks"][argbest]
 \textcolor{blue}{\small\url{https://github.com/jpivarski/jupyter-performance-studies/blob/master/2018-09-10-jagged-reduction.ipynb}}
 \end{frame}
 
-\begin{frame}[fragile]{``Femtocode Lite?''}
+\begin{frame}[fragile]{``Femtocode Lite?'' Expressive and functional, but not declarative.}
 \vspace{0.25 cm}
 Only four types of arrays are needed to make a reasonably complete typesystem ({\bf PLUR}, as expressive as Protobuf, Avro, Parquet, Arrow, \ldots):
 \begin{itemize}
