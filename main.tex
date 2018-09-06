@@ -77,13 +77,42 @@ I often talk about a ``query service'' to end our reliance on private skims befo
 \uncover<2->{\textcolor{darkblue}{That's still my end goal, which I use to judge the value of each of my subprojects, but what I'm actually doing is several steps removed from that.}}
 \end{frame}
 
+\begin{frame}{What is a query service?}
+\large
+\vspace{0.5 cm}
+\textcolor{darkorange}{\bf Different performance characteristics $\to$ sociological consequences}
+
+\vspace{1 cm}
+\begin{columns}
+\column{0.3\linewidth}
+\underline{\Large Batch job}
+
+\vspace{0.2 cm}
+Long time to compute one complex function
+\column{0.3\linewidth}
+\underline{\Large Query}
+
+\vspace{0.2 cm}
+Short time to compute each simple function
+\end{columns}
+
+\vspace{1 cm}
+\begin{uncoverenv}<2->
+\begin{tikzpicture}[>=latex]
+\node[rectangle callout, draw, inner sep=5 pt, callout relative pointer={(200:1 cm)}, text width=0.47\linewidth] {\large Optimize execution of well-defined procedures, like central reconstruction};
+\end{tikzpicture} \hfill \begin{tikzpicture}[>=latex]
+\node[rectangle callout, draw, inner sep=5 pt, callout relative pointer={(-200:-1 cm)}, text width=0.45\linewidth] {\large Make and correct mistakes, discover blind alleys early, find surprises};
+\end{tikzpicture}
+\end{uncoverenv}
+\end{frame}
+
 \begin{frame}{Pieces of a query service}
 \small
 \vspace{0.15 cm}
 \begin{columns}
 \column{1.1\linewidth}
 \begin{itemize}
-\item \textcolor{darkblue}{\large Distributed task scheduling:} \uncover<2->{Experimented, have some leads; not actively developing. Igor Mandrichenko's FNAL LDRD project is a promising prototype. Joosep Pata starting on a concept at Caltech. ROOT considering a revamped PROOF. Spark and Dask don't look like realistic options.}
+\item \textcolor{darkblue}{\large Distributed query scheduling:} \uncover<2->{Experimented, have some leads; not actively developing. Igor Mandrichenko's FNAL LDRD project is a promising prototype. Joosep Pata starting on a concept at Caltech. ROOT considering a revamped PROOF. Spark and Dask don't look like realistic options.}
 
 \item \textcolor{darkblue}{\large Query language:} \uncover<3->{Femtocode, my analysis-specialized, zero-runtime-error query language is a working concept, but a new language is not the \underline{\it first} thing we need. I might revive this key ideas in Harrison Prosper and Sezen Sekmen's ``Les Houches Analysis Language'' project.}
 
@@ -487,12 +516,63 @@ Books of related histograms for HistFactory/HiggsCombiner.
 \Large
 \vspace{1 cm}
 \begin{center}
+\textcolor{darkblue}{Thoughts on distributed query scheduling}
+\end{center}
+\end{frame}
+
+\begin{frame}{Getting back to query-handling}
+\large
+\vspace{0.5 cm}
+\begin{center}
+\begin{minipage}{0.75\linewidth}
+\begin{center}
+The array processing and columnar granularity I've discussed is to improve throughput of simple tasks, like queries.
+
+\vspace{0.75 cm}
+Responding to queries quickly also requires low latency: caching input data {\it on the workers.}
+
+\vspace{0.75 cm}
+To use worker-cache effectively, tasks must be sent to the worker with the most inputs for that task in cache.
+\end{center}
+\end{minipage}
+\end{center}
+\end{frame}
+
+\begin{frame}{Cache-aware task placement by {\it pulling} work to workers}
+\vspace{0.25 cm}
+\only<1>{\includegraphics[width=\linewidth]{tasks-89.pdf}}
+\only<2>{\includegraphics[width=\linewidth]{tasks-90.pdf}}
+\only<3>{\includegraphics[width=\linewidth]{tasks-91.pdf}}
+\only<4>{\includegraphics[width=\linewidth]{tasks-92.pdf}}
+\only<5>{\includegraphics[width=\linewidth]{tasks-93.pdf}}
+\only<6>{\includegraphics[width=\linewidth]{tasks-94.pdf}}
+\only<7>{\includegraphics[width=\linewidth]{tasks-95.pdf}}
+\only<8>{\includegraphics[width=\linewidth]{tasks-96.pdf}}
+\only<9>{\includegraphics[width=\linewidth]{tasks-97.pdf}}
+\only<10>{\includegraphics[width=\linewidth]{tasks-98.pdf}}
+\only<11>{\includegraphics[width=\linewidth]{tasks-99.pdf}}
+\end{frame}
+
+\begin{frame}{Next topic}
+\Large
+\vspace{1 cm}
+\begin{center}
 \textcolor{darkblue}{No more; surely we've run out of time!}
 \end{center}
 \end{frame}
 
 \begin{frame}{Summary}
-HERE
+\large
+\vspace{0.5 cm}
+\begin{itemize}\setlength{\itemsep}{0.5 cm}
+\item Still motivated by the idea of a query service, although that's a big problem with many parts; probably a lot of smaller projects will have to come together.
+
+\item I've been concentrating on the columnar array processing part of that because it's so underdeveloped (inside and outside of HEP).
+
+\item Some of these things are useful in the short term, before any query service exists. I'm pushing those for user feedback.
+
+\item Looking forward to collaborations.  {\tt\small :)}
+\end{itemize}
 \end{frame}
 
 \end{document}
